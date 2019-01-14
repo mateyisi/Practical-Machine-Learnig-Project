@@ -1,0 +1,39 @@
+---
+title: "Mohau-Mateyisi-project-report"
+author: "Mohau Mateyisi"
+date: "13 January 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Summary of the Practical Machine Learning project
+
+The objective of the project is to predict classes indicating how well a physical exercise is done. The data is related to the accelerometers on the belt, forearm, arm, and dumbell observables for 6 participants. 
+
+In order to fomulate a prediction model, the data is first clearned by removing rows with missing values and NAs.
+
+Dimensional rediction on the training and testing data is achieved by getting rid of correlated variables. This is achieved by calculating a correlation matrix and eliminating columns that are highly correlated at 30% significance threshold. 
+
+#### Cross Validation
+
+For reproducibility of prediction the seed is set to 3833.
+The training data is split into 75% training and 25% cross-validation data set. A random forest model and boasted tree algorithm is trained on the training data set and the objects produced by training methods, sre used to calculate the variable importance.
+
+#### Model formulation
+
+ Only the top 4 important variables are used for formulating a simplied model. This simplication leads to increased speed of prediction and training.
+
+#### Error rate calculation
+The two random forest and boasted trees models are tested on the validation data sets for accurancy yielding above 99% accuracy. 
+
+#### Final Prediction 
+
+A hybrid model is formulated using the prediction of the Stochastic Gradient Boosting and random forest models leading to a model with increases prediction accuracy of 99.93883%.
+
+Regarding that the consituent models have a satisfactory accourary 99.59217% and 99.83687% respecitvely, they are used for making the final prediction on the clearned and decorelated testing data.
+
+
+
