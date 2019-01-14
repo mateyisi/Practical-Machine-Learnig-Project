@@ -1,6 +1,6 @@
 # Practical-Machine-Learnig-Project
 
-#This repository presents the Practical machine learning projects report.
+This repository presents the Practical machine learning projects report.
 
 
 The r-mark down implientation of the assingnment is in the file: "Practical-Machine-Learning-Course-Project-R.Rmd"
